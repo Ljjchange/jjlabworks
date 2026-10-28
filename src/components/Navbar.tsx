@@ -1,13 +1,3 @@
 export default function Navbar() {
-  return (
-    <nav>
-      <div>JJ</div>
-
-      <div>
-        <a href="#about">About</a>
-        <a href="#topics">Topics</a>
-        <a href="#social">Connect</a>
-      </div>
-    </nav>
-  );
+  return <header className="site-header"><a className="logo" href="#home">JJ</a><span className="tagline">Build · Learn · Create</span><nav aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#chapters">Stories</a><a href="mailto:hello@example.com" aria-label="Contact email placeholder">Contact</a></nav><details className="connect"><summary>Connect with me ↗</summary><div className="connect-menu"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.strava.com/" target="_blank" rel="noreferrer">Strava</a><a href="https://www.spotify.com/" target="_blank" rel="noreferrer">Spotify</a></div></details></header>;
 }

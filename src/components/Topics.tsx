@@ -1,17 +1,2 @@
-import { topics } from "@/src/data/topics";
-import TopicCard from "@/src/components/TopicCard";
-
-export default function Topics() {
-  return (
-    <section id="topics">
-      <h2>What I&apos;m Exploring</h2>
-
-      {topics.map((topic) => (
-        <TopicCard
-          key={topic.title}
-          topic={topic}
-        />
-      ))}
-    </section>
-  );
-}
+const chapters=[{year:"1991 – 2014",age:"Age 0 – 23",description:"Growing up in Chongqing",image:"chapter-chongqing.jpg"},{year:"2014 – 2026",age:"Age 23 – 35",description:"Life in the U.S.",image:"chapter-us.jpg"},{year:"2026 – Beyond",age:"Age 35+",description:"What’s next",image:"chapter-beyond.jpg"}];
+export default function Topics(){return <section id="chapters" className="chapters"><div className="chapter-heading"><h2>LIFE CHAPTERS</h2><a href="#chapters">Explore my stories →</a></div><div className="chapter-grid">{chapters.map(c=><article className="chapter-card" key={c.year}><img src={'/images/'+c.image} alt="Colorful watercolor landscape"/><h3>{c.year}</h3><p>{c.age}<br/>{c.description}</p></article>)}</div></section>}

@@ -1,7 +1,1 @@
-export default function Footer() {
-  return (
-    <footer>
-      <p>© {new Date().getFullYear()} JJ. Built as a learning project.</p>
-    </footer>
-  );
-}
+export default function Footer(){return <footer className="site-footer"><a className="logo" href="#home">JJ</a><span>Build · Learn · Create</span><em>Same curiosity, different chapters.</em><div><a href="#about">About</a><a href="#chapters">Stories</a><a href="mailto:hello@example.com">Contact</a></div></footer>}
